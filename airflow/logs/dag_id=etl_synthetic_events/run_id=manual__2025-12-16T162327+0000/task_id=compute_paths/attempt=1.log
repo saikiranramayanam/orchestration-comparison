@@ -1,0 +1,19 @@
+[2025-12-16T16:23:29.555+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-12-16T16:23:29.588+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_synthetic_events.compute_paths manual__2025-12-16T16:23:27+00:00 [queued]>
+[2025-12-16T16:23:29.604+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_synthetic_events.compute_paths manual__2025-12-16T16:23:27+00:00 [queued]>
+[2025-12-16T16:23:29.606+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-12-16T16:23:29.626+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): compute_paths> on 2025-12-16 16:23:27+00:00
+[2025-12-16T16:23:29.648+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1440) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-12-16T16:23:29.651+0000] {standard_task_runner.py:72} INFO - Started process 1442 to run task
+[2025-12-16T16:23:29.648+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'etl_synthetic_events', 'compute_paths', 'manual__2025-12-16T16:23:27+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/etl_***_dag.py', '--cfg-path', '/tmp/tmpkuqs4yzl']
+[2025-12-16T16:23:29.652+0000] {standard_task_runner.py:105} INFO - Job 47: Subtask compute_paths
+[2025-12-16T16:23:29.680+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-12-16T16:23:29.776+0000] {task_command.py:467} INFO - Running <TaskInstance: etl_synthetic_events.compute_paths manual__2025-12-16T16:23:27+00:00 [running]> on host 9323c418e2a6
+[2025-12-16T16:23:29.968+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_synthetic_events' AIRFLOW_CTX_TASK_ID='compute_paths' AIRFLOW_CTX_EXECUTION_DATE='2025-12-16T16:23:27+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-16T16:23:27+00:00'
+[2025-12-16T16:23:29.971+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-12-16T16:23:29.997+0000] {python.py:240} INFO - Done. Returned value was: {'input_path': '/opt/***/shared/synthetic_events.csv', 'final_output_path': '/opt/***/shared/***_output_2025_12_15'}
+[2025-12-16T16:23:30.043+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-12-16T16:23:30.044+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=etl_synthetic_events, task_id=compute_paths, run_id=manual__2025-12-16T16:23:27+00:00, execution_date=20251216T162327, start_date=20251216T162329, end_date=20251216T162330
+[2025-12-16T16:23:30.111+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-12-16T16:23:30.156+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-16T16:23:30.160+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
