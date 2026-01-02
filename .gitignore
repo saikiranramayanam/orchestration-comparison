@@ -1,1 +1,34 @@
-"airflow/logs/" 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+
+# Airflow logs
+airflow/logs/
+airflow/dags/__pycache__/
+
+# Docker
+.dockerignore
+.DS_Store
+
+# IDEs
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Data outputs (optional - keep for parity check)
+**/output/
+**/airflow_output/
+**/prefect_output/
+**/dagster_output/
